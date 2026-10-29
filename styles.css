@@ -237,3 +237,141 @@ h1 em {
 .wishlist-toggle:focus-visible + .btn-wishlist {
   outline: 3px solid var(--purple);
 }
+.section {
+  padding: 80px 0 84px;
+}
+.tinted {
+  background: var(--tinted);
+}
+.section-heading {
+  text-align: center;
+  margin-bottom: 68px;
+}
+.section-heading h2 {
+  font-size: 38px;
+  font-weight: 750;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+.section-heading h2 span {
+  color: var(--deep-purple);
+}
+.section-heading p {
+  font-size: 21px;
+  line-height: 1.35;
+  margin: 0;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 425px;
+  padding: 32px;
+  border-radius: 25px;
+  background: #fff;
+  border: 1px solid #f0edff;
+  box-shadow: 0 14px 34px rgba(82, 55, 150, 0.035);
+}
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 17px;
+  margin: 0 0 26px;
+}
+.feature-kicker {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.violet {
+  color: #833bff;
+}
+.cyan {
+  color: #0696b7;
+}
+.green {
+  color: #059b66;
+}
+.orange {
+  color: #e54c08;
+}
+.blue {
+  color: #018ccd;
+}
+.red {
+  color: #f20342;
+}
+.feature-card h3 {
+  font-size: 25px;
+  font-weight: 750;
+  line-height: 1.2;
+  margin: 0 0 14px;
+  letter-spacing: -0.25px;
+}
+.feature-card > p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+.feature-stat {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  border-top: 1px solid #ebe9f2;
+  padding-top: 22px;
+}
+.feature-stat strong {
+  color: #7150ad;
+  font-size: 27px;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+.feature-stat span {
+  color: #858585;
+  font-size: 15px;
+  margin-top: 6px;
+}
+.creator-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  min-height: 190px;
+  padding: 38px 42px;
+  margin-top: 52px;
+  border-radius: 25px;
+  background: var(--deep-purple);
+  color: white;
+}
+.creator-eyebrow {
+  font-size: 16px;
+  color: #e2d3ff;
+  margin-bottom: 6px;
+}
+.creator-banner h2 {
+  font-size: 30px;
+  margin: 0 0 5px;
+  line-height: 1.2;
+  font-weight: 750;
+}
+.creator-banner p:last-child {
+  font-size: 17px;
+  margin: 0;
+  color: #e4d7ff;
+}
+.btn-white {
+  background: white;
+  color: #7418f4;
+  font-size: 16px;
+  min-height: 60px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
