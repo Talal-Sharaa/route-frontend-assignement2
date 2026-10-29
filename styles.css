@@ -725,3 +725,169 @@ h1 em {
   min-width: 77px;
   color: #1d4eaa;
 }
+@media (max-width: 1150px) {
+  .nav-links {
+    margin-right: 0;
+    gap: 18px;
+  }
+  .hero-grid {
+    gap: 35px;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .products-grid {
+    gap: 15px;
+  }
+  .product-card {
+    padding: 15px;
+  }
+  .reviews-grid {
+    grid-template-columns: 32% 1fr;
+    gap: 24px;
+  }
+}
+@media (max-width: 850px) {
+  .brand {
+    font-size: 19px;
+  }
+  .nav-links {
+    gap: 11px;
+  }
+  .nav-links a {
+    font-size: 13px;
+  }
+  .hero {
+    min-height: unset;
+    padding: 130px 0 80px;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+  }
+  .section {
+    padding: 65px 0;
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  .rating-panel {
+    position: static;
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .creator-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 560px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  .site-header {
+    height: 70px;
+  }
+  .brand {
+    font-size: 20px;
+  }
+  .brand img {
+    width: 36px;
+    height: 37px;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+  }
+  .nav-links {
+    max-width: 100%;
+    overflow: auto;
+    gap: 15px;
+  }
+  .nav-links a {
+    font-size: 11px;
+  }
+  .hero {
+    padding: 120px 0 65px;
+  }
+  .hero-grid {
+    gap: 30px;
+  }
+  .hero-image-frame {
+    padding: 12px;
+  }
+  .tags {
+    gap: 7px;
+  }
+  .tags span {
+    font-size: 12px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .description {
+    font-size: 17px;
+  }
+  .price-line strong {
+    font-size: 30px;
+  }
+  .price-line del {
+    font-size: 19px;
+  }
+  .section-heading h2 {
+    font-size: 29px;
+  }
+  .section-heading p {
+    font-size: 16px;
+  }
+  .features-grid,
+  .products-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature-card {
+    min-height: 370px;
+    padding: 25px;
+  }
+  .creator-banner {
+    padding: 27px;
+  }
+  .creator-banner h2 {
+    font-size: 24px;
+  }
+  .review-card {
+    padding: 22px;
+    min-height: unset;
+  }
+  .review-top {
+    flex-wrap: wrap;
+  }
+  .review-meta {
+    margin-left: 75px;
+    text-align: left;
+  }
+  .quote {
+    font-size: 16px;
+  }
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .product-card {
+    min-height: 430px;
+  }
+  .footer-about > p {
+    max-width: none;
+  }
+}
