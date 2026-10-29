@@ -375,3 +375,353 @@ h1 em {
   font-weight: 700;
   flex-shrink: 0;
 }
+.reviews-section .section-heading {
+  margin-bottom: 68px;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 396px minmax(0, 1fr);
+  gap: 52px;
+  align-items: start;
+}
+.rating-panel {
+  position: sticky;
+  top: 92px;
+  padding: 32px;
+  border: 2px solid var(--border);
+  border-radius: 24px;
+  min-height: 517px;
+}
+.rating-head {
+  text-align: center;
+  margin-bottom: 31px;
+}
+.rating-head strong {
+  font-size: 62px;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  font-weight: 750;
+}
+.five-stars {
+  font-size: 26px;
+  color: #ffb700;
+  letter-spacing: 2px;
+  line-height: 1.15;
+}
+.rating-head p {
+  font-size: 16px;
+  margin: 4px 0 0;
+}
+.ratings-bars {
+  display: grid;
+  gap: 16px;
+}
+.ratings-bars > div {
+  display: grid;
+  grid-template-columns: 27px 1fr 47px;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.ratings-bars > div > span:last-child {
+  text-align: right;
+}
+.track {
+  height: 12px;
+  border-radius: 20px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+.track i {
+  display: block;
+  height: 100%;
+  background: #f0b100;
+  border-radius: inherit;
+}
+.rating-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--border);
+  margin-top: 38px;
+  padding-top: 26px;
+  gap: 12px;
+}
+.rating-bottom > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.rating-bottom strong {
+  font-size: 25px;
+  line-height: 1.2;
+}
+.rating-bottom span {
+  font-size: 14px;
+}
+.reviews-list {
+  display: grid;
+  gap: 26px;
+}
+.review-card {
+  min-height: 285px;
+  padding: 35px 33px;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+}
+.review-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.review-top > img {
+  height: 59px;
+  width: 59px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.review-identity {
+  padding-top: 0;
+  flex: 1;
+}
+.review-identity h3 {
+  font-size: 19px;
+  line-height: 1.25;
+  margin: 0 0 5px;
+  font-weight: 750;
+}
+.review-identity p {
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+.review-stars {
+  font-size: 21px;
+  letter-spacing: 1px;
+  color: #ffb700;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+.review-stars small {
+  color: #333;
+  font-size: 13px;
+  letter-spacing: 0;
+  margin-left: 4px;
+}
+.review-meta {
+  text-align: right;
+  white-space: nowrap;
+}
+.review-meta span {
+  font-size: 13px;
+  color: #6515e0;
+  background: #eee9ff;
+  padding: 5px 12px;
+  border-radius: 100px;
+  display: inline-block;
+  font-weight: 600;
+}
+.review-meta p {
+  font-size: 14px;
+  margin: 3px 0 0;
+}
+.quote {
+  font-size: 19px;
+  line-height: 1.62;
+  margin: 0;
+}
+.more-reviews {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.more-reviews .btn {
+  min-height: 55px;
+  font-size: 16px;
+  padding: 10px 36px;
+}
+.accessories-section .section-heading {
+  margin-bottom: 68px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 34px;
+}
+.product-card {
+  padding: 24px;
+  min-height: 456px;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.product-card > img {
+  width: 100%;
+  aspect-ratio: 244/203;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+.product-card h3 {
+  font-size: 21px;
+  font-weight: 750;
+  line-height: 1.2;
+  margin: 0 0 11px;
+}
+.product-card > p {
+  font-size: 17px;
+  line-height: 1.55;
+  margin: 0 0 18px;
+}
+.product-bottom {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.product-bottom strong {
+  font-size: 24px;
+  font-weight: 750;
+}
+.product-bottom button {
+  background: var(--purple);
+  border: 0;
+  color: white;
+  border-radius: 100px;
+  padding: 10px 15px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.all-accessories {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+.btn-outline-purple {
+  border-color: var(--deep-purple);
+  color: var(--deep-purple);
+  background: transparent;
+  font-size: 16px;
+  font-weight: 650;
+  min-height: 63px;
+  padding-inline: 34px;
+}
+.site-footer {
+  background: #101828;
+  color: #fff;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 34px;
+  padding-top: 65px;
+  padding-bottom: 50px;
+}
+.footer-brand {
+  font-size: 25px;
+  font-weight: 750;
+  gap: 9px;
+}
+.footer-about > p {
+  max-width: 260px;
+  margin: 22px 0 23px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+.socials {
+  display: flex;
+  gap: 16px;
+}
+.socials a {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  background: #1e293b;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #f4f6ff;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+.footer-links h3 {
+  font-size: 18px;
+  margin: 0 0 15px;
+  font-weight: 650;
+}
+.footer-links a {
+  font-size: 17px;
+  color: #98a2b3;
+  line-height: 1.35;
+}
+.footer-links a:hover {
+  color: white;
+}
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 0 42px;
+}
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+.payments {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+.payments > span {
+  height: 43px;
+  min-width: 54px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: #fff;
+  color: #003c83;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: italic;
+}
+.payments .paypal {
+  font-size: 13px;
+  min-width: 89px;
+}
+.payments .mastercard {
+  gap: 0;
+  min-width: 53px;
+}
+.mastercard i {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  display: block;
+  background: #ef262b;
+}
+.mastercard i + i {
+  background: #f7a208;
+  margin-left: -9px;
+  opacity: 0.9;
+}
+.payments .visa {
+  font-size: 24px;
+  letter-spacing: -1px;
+  min-width: 77px;
+  color: #1d4eaa;
+}
