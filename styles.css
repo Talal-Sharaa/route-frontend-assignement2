@@ -1,0 +1,239 @@
+:root {
+  --purple: #8e51ff;
+  --deep-purple: #7f22fe;
+  --lavender: #f5f3ff;
+  --tinted: #f7f5ff;
+  --ink: #333;
+  --border: #e5e7eb;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  background: white;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+button:hover,
+a.btn:hover {
+  filter: brightness(0.97);
+}
+:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 3px;
+}
+.container {
+  width: calc(100% - 48px);
+  max-width: 1296px;
+  margin-inline: auto;
+}
+.site-header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 76px;
+  border-bottom: 1px solid #ddd6fe;
+  background: var(--lavender);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.brand,
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 25px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+.brand img,
+.footer-brand img {
+  width: 43px;
+  height: 44px;
+  object-fit: contain;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 48px;
+}
+.nav-links a {
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.nav-links a.active {
+  color: var(--deep-purple);
+  text-decoration: underline;
+  text-underline-offset: 9px;
+  text-decoration-thickness: 2px;
+}
+.nav-links a:hover {
+  color: var(--deep-purple);
+}
+.hero {
+  min-height: 100vh;
+  padding-top: 84px;
+  display: flex;
+  align-items: center;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 68px;
+}
+.hero-image-frame {
+  padding: 21px;
+  border: 2px solid #e2e6eb;
+  border-radius: 25px;
+}
+.hero-image-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  aspect-ratio: 570/528;
+  object-fit: cover;
+}
+.hero-copy {
+  align-self: center;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.tags span {
+  background: #a684ff;
+  color: #fff;
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.2;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1 {
+  font-size: 50px;
+  line-height: 1.17;
+  letter-spacing: -1px;
+  font-weight: 750;
+  margin-bottom: 20px;
+}
+h1 em {
+  color: var(--purple);
+  font-style: normal;
+}
+.description {
+  font-size: 21px;
+  line-height: 1.61;
+  margin-bottom: 37px;
+}
+.price-line {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+.price-line strong {
+  font-size: 37px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+.price-line del {
+  font-size: 23px;
+  color: #444;
+}
+.save {
+  font-size: 14px;
+  font-weight: 650;
+  color: #df1414;
+  background: #ffe1e1;
+  padding: 4px 12px;
+  border-radius: 30px;
+}
+.payment-line {
+  font-size: 17px;
+  margin-bottom: 33px;
+}
+.purchase-buttons {
+  display: grid;
+  gap: 16px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  padding: 12px 26px;
+  border-radius: 100px;
+  min-height: 64px;
+  border: 2px solid transparent;
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.3;
+  text-align: center;
+}
+.btn-purple {
+  color: white;
+  background: var(--purple);
+}
+.btn-wishlist {
+  background: #fff;
+  border-color: #d3d9e2;
+  cursor: pointer;
+}
+.wishlist-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.wish-added {
+  display: none;
+}
+.wishlist-toggle:checked + .btn-wishlist {
+  background: #f5f3ff;
+  border-color: var(--purple);
+}
+.wishlist-toggle:checked + .btn-wishlist .wish-default {
+  display: none;
+}
+.wishlist-toggle:checked + .btn-wishlist .wish-added {
+  display: inline;
+}
+.wishlist-toggle:focus-visible + .btn-wishlist {
+  outline: 3px solid var(--purple);
+}
